@@ -1,16 +1,31 @@
-import express from "express";
-import userRoute from "./routes/userRoute.js";
+import express from "express"
+import cors from "cors"
+import { connectDB } from "./config/db.js"
+import foodRouter from "./routes/foodRoute.js"
 
-const app = express();
 
-app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("API Working");
-});
 
-app.use("/api/user", userRoute);
+const app  = express()
+const port = 4000
 
-app.listen(4000, () => {
-  console.log("Server running on port 4000");
-});
+
+app.use(express.json())
+app.use(cors())
+
+//db connection
+connectDB();
+
+//api endpoints
+app.use("/api/food",foodRouter)
+app.use("/images",express.static('upload'))
+
+
+
+app.get("/",(req,res)=>{
+    res.send("API Working")
+})
+
+app.listen(port,()=>{
+    console.log(`Server Started on http://localhost:${port}`)
+})
