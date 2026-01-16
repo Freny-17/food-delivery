@@ -25,4 +25,13 @@ hr{
 
 .app-content{
   display: flex;
+<<<<<<< HEAD
+=======
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+>>>>>>> 674e90e (Updated project with new backend, admin panel, and fixes)
 }

@@ -25,12 +25,18 @@
     border-radius: 3px 0px 0px 3px;
     cursor: pointer;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 674e90e (Updated project with new backend, admin panel, and fixes)
 .sidebar-option.active{
     background-color: #fff0ed;
     border-color: tomato;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 674e90e (Updated project with new backend, admin panel, and fixes)
 @media (max-width:900px) {
     .sidebar-option p{
         display: none;

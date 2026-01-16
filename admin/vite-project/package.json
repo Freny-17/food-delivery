@@ -1,11 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "vite-project",
+=======
+  "name": "admin",
+>>>>>>> 674e90e (Updated project with new backend, admin panel, and fixes)
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+<<<<<<< HEAD
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -28,3 +33,19 @@
     "vite": "^7.2.4"
   }
 }
+=======
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4",
+    "@vitejs/plugin-react": "^4.2.1"
+  }
+}
+
+>>>>>>> 674e90e (Updated project with new backend, admin panel, and fixes)

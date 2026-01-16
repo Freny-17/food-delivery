@@ -1,14 +1,18 @@
 import React from 'react'
 import './Sidebar.css'
 import { assets } from '../../assets/assets'
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 674e90e (Updated project with new backend, admin panel, and fixes)
 import { NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
         <div className="sidebar-options">
+<<<<<<< HEAD
 
             <div className="sidebar-option">
                 <img src={assets.add_icon} alt="" />
@@ -25,6 +29,8 @@ const Sidebar = () => {
                 <p>Orders</p>
             </div>
 
+=======
+>>>>>>> 674e90e (Updated project with new backend, admin panel, and fixes)
             <NavLink to='/add' className="sidebar-option">
                 <img src={assets.add_icon} alt="" />
                 <p>Add Items</p>

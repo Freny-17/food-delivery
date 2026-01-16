@@ -6,7 +6,10 @@ import Add from './pages/Add/Add'
 import List from './pages/List/List'
 import Orders from './pages/Orders/Orders'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 674e90e (Updated project with new backend, admin panel, and fixes)
 const App = () => {
   return (
     <div>
@@ -19,7 +22,10 @@ const App = () => {
           <Route path="/add" element={<List/>}/>
           <Route path="/add" element={<Orders/>}/>
         </Routes>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 674e90e (Updated project with new backend, admin panel, and fixes)
       </div>
     </div>
   )
