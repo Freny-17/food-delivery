@@ -2,11 +2,17 @@ import mongoose from "mongoose";
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/food-del");
-    console.log("MongoDB Connected Successfully");
+    await mongoose.connect(process.env.MONGO_URL, {
+      family: 4,
+      tls: true,
+      retryWrites: true,
+      w: "majority",
+      serverSelectionTimeoutMS: 5000,
+    });
+
+    console.log("DB Connected");
   } catch (error) {
-    console.log("MongoDB Connection Failed");
-    console.error(error);
+    console.error("DB Connection Failed:", error.message);
     process.exit(1);
   }
 };
